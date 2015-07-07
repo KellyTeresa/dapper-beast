@@ -50,7 +50,7 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'shoulda-matchers', require: false
   gem 'faker'
-  #Some extras 
+  #Some extras
   gem 'capybara-webkit'
   gem 'database_cleaner'
 end
@@ -66,3 +66,8 @@ gem 'modernizr-rails'
 gem 'dotenv-rails'
 # gem 'carrierwave'
 # gem 'fog'
+
+group :test do
+  gem 'coveralls', require: false
+  gem 'simple_cov'
+end
