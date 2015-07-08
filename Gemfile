@@ -50,9 +50,6 @@ group :development, :test do
   gem 'valid_attribute'
   gem 'shoulda-matchers', require: false
   gem 'faker'
-  #Some extras
-  gem 'capybara-webkit'
-  gem 'database_cleaner'
 end
 
 group :production do
@@ -69,5 +66,4 @@ gem 'dotenv-rails'
 
 group :test do
   gem 'coveralls', require: false
-  gem 'simple_cov'
 end
