@@ -1,8 +1,11 @@
 link_list = [
   ["GitHub", "https://github.com/KellyTeresa", false],
   ["Programming Blog", "http://kellyraila.tumblr.com/", false],
-  ["Gender Friendly Adventures",
-    "https://genderfriendlyadventures.herokuapp.com/", true],
+  [
+    "Gender Friendly Adventures",
+    "https://genderfriendlyadventures.herokuapp.com/",
+    true
+  ],
   ["DollarDrain", "http://dollardrain.herokuapp.com/", true],
   ["ChocoWeb 2.0", "http://chocoweb.herokuapp.com/", true],
   ["LinkedIn", "https://www.linkedin.com/in/kraila", false]
