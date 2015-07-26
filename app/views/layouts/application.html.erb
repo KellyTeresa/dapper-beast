@@ -4,17 +4,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
+    <title>Kelly Teresa</title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
-    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
+    <% flash.each do |type, message| %>
+      <div data-alert class="alert-box <%= type %>">
+        <%= message %>
+        <a href="#" class="close">&times;</a>
+      </div>
+    <% end %>
 
-    <%= yield %>
+    <div class="row main-body">
+      <div class="small-12 columns">
+        <%= yield %>
+      </div>
+    </div>
 
   </body>
 </html>
