@@ -6,7 +6,11 @@ link_list = [
     "https://genderfriendlyadventures.herokuapp.com/",
     true
   ],
-  ["DollarDrain (Group Project)", "https://github.com/kaylarr/dollardrains", true],
+  [
+    "DollarDrain (Group Project)",
+    "https://github.com/kaylarr/dollardrains",
+    true
+  ],
   ["ChocoWeb 2.0", "http://chocoweb.herokuapp.com/", true],
   ["LinkedIn", "https://www.linkedin.com/in/kraila", false]
 ]
