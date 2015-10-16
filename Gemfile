@@ -63,6 +63,8 @@ gem 'modernizr-rails'
 gem 'dotenv-rails'
 # gem 'carrierwave'
 # gem 'fog'
+gem 'tumblr_client'
+
 
 group :test do
   gem 'coveralls', require: false

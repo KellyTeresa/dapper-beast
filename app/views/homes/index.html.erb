@@ -1,21 +1,34 @@
 <div class="row">
-  <div class="small-12 medium-6 columns">
-    <h1>Kelly Teresa Raila</h1>
-    Projects
+  <div class="small-12 columns">
+    <header>
+      <h1>Kelly Teresa Raila</h1>
+    </header>
+  </div>
+</div>
+<div class="row links-container">
+  <div class="small-12 medium-6 links columns">
+    <h3>Projects</h3>
     <ul>
       <% @projects.each do |link| %>
         <li><%= link_to link.name, link.url %></li>
       <% end %>
     </ul>
 
-    Other
+    <h3>Other</h3>
     <ul>
       <% @other.each do |link| %>
         <li><%= link_to link.name, link.url %></li>
       <% end %>
     </ul>
   </div>
-  <div class="small-12 medium-6 columns">
+  <div class="show-for-medium-up medium-6 portrait columns">
     <%= image_tag("portrait.jpg") %>
+  </div>
+</div>
+<div class="row blog-container">
+  <div class="small-12 blog-post columns">
+    <h3>Most Recent Blog Post</h3>
+    <a href="#{@post["short_url"]}"><%= @post["title"] %></a>
+    <%= @post["body"].html_safe %>
   </div>
 </div>
